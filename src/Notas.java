@@ -5,8 +5,7 @@ public class Notas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Double> notas = new ArrayList<>(); 
-        int contador = 0; 
-        int contador2 = 0;
+        int contador = 0, contador2 = 0, contador3 = 0;
         double soma = 0; 
         double media;
 
@@ -61,10 +60,10 @@ public class Notas {
         //Calcule e mostre a quantidade de valores abaixo de sete
         for(int i = 0; i < notas.size(); i++){
             if(notas.get(i) < 7){
-                contador2++;
+                contador3++;
             }
         }
-        System.out.println("Notas abaixo de sete: " + contador2);
+        System.out.println("Notas abaixo de sete: " + contador3);
 
         System.out.println("Encerrando o programa...");
         scanner.close();
